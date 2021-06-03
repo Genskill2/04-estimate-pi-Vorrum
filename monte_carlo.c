@@ -9,7 +9,8 @@ float frandom() {
   return ret;
 }
 
-float mc_pi(int a) {
+float mc_pi(int a) 
+{
 float x=0, y=0;                       
 int circle_points=0;                  
 float d; 
