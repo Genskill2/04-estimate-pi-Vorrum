@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <math.h>
 
+float frandom() {
+  long int q = random();
+  float ret = (float)q/(float)RAND_MAX;
+  return ret;
+}
+
 float mc_pi(int a) {
 float x=0, y=0;                       
 int circle_points=0;                  
@@ -23,13 +29,6 @@ circle_points+=1;
 area = (float)(4*circle_points)/a;
 return (area);
   
-}
-
-
-float frandom() {
-  long int q = random();
-  float ret = (float)q/(float)RAND_MAX;
-  return ret;
 }
 
 int main(void) {
