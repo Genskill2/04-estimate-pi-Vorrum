@@ -5,8 +5,7 @@
 
 float wallis_pi(int a){
 float pi=1.0;
-int i=1;
-
+  
 for(int i=1;i<=a;i++)
 {
 
